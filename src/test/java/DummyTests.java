@@ -30,7 +30,7 @@ public class DummyTests {
 
 	// will be started before and stopped after each test method
 	@Container
-	private static PostgreSQLContainer postgresqlContainer = new PostgreSQLContainer()
+	private static PostgreSQLContainer postgresqlContainer = new PostgreSQLContainer("postgres:10.17")
 			.withDatabaseName("foo")
 			.withUsername("foo")
 			.withPassword("secret");
